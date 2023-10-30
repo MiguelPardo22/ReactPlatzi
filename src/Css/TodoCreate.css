@@ -1,0 +1,15 @@
+/* TodoCreate.css */
+.CreateButton {
+    background-color: rgb(25, 195, 125);
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%; /* Esto hace que el botón tenga forma de círculo */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  .CreateButton:hover {
+    background-color: #07e983; /* Cambio de color al pasar el mouse por encima */
+  }

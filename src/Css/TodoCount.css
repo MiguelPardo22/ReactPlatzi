@@ -1,0 +1,7 @@
+.TodoCountContainer {
+    background-color: #343541; /* Color de fondo similar al de ChatGPT */
+    padding: 10px; /* Agrega espaciado interno si es necesario */
+    border-radius: 5px; /* Agrega bordes redondeados si lo deseas */
+    color: rgb(255, 255, 255);
+    margin: 20px;
+  }

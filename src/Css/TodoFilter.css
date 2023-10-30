@@ -1,0 +1,32 @@
+.input-container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transform-origin: left;
+}
+
+input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(25, 195, 125);
+  outline: none;
+  width: 100%;
+  font-size: 16px; /* Ajusta el tamaño de fuente según tu preferencia */
+  padding: 5px 0; /* Ajusta el relleno para hacer el input un poco más grande */
+  color: #ffffff;
+}
+
+.focused h4 {
+  transform: translateY(-24px) scale(0.8);
+  opacity: 0.7;
+}
