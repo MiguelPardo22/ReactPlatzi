@@ -58,3 +58,9 @@ textarea {
   resize: none; /* Evita que el usuario redimensione el textarea */
   height: 50px; /* Altura personalizable */
 }
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}

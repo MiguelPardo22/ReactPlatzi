@@ -71,7 +71,7 @@ function TodoProvider(props) {
         newTodos.splice(todoIndex, 1);
         // newTodos.pop(todoIndex); Mi forma de eliminar un dato de un array
         saveTodos(newTodos);
-        ok("TODO Eliminado", "error");
+        ok("TODO Eliminado", "success");
       }
     });
   };

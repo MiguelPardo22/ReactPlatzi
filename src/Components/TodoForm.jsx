@@ -6,16 +6,23 @@ import "../Css/TodoForm.css";
 function TodoForm() {
   const { closeModal, addTodo, ok } = useContext(TodoContext);
   const [newTodosValue, setTodosValue] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const onSubmit = (e) => {
     e.preventDefault();
-    addTodo(newTodosValue);
-    ok("TODO creado", "success");
-    closeModal();
+  
+    if (newTodosValue.trim() === '') {
+      setErrorMessage('El campo no puede estar vacío');
+    } else {
+      addTodo(newTodosValue);
+      ok("TODO creado", "success");
+      closeModal();
+    }
   }
 
   const onChange = (e) => {
     setTodosValue(e.target.value);
+    setErrorMessage('');
   }
 
   return (
@@ -29,6 +36,7 @@ function TodoForm() {
           onChange={onChange}
           placeholder="Nombre del TODO"
         ></textarea>
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
       </div>
       <div className="containerButton">
         <button type="button" className="btn danger" onClick={closeModal}>
