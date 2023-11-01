@@ -1,0 +1,73 @@
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el contenido del Modal */
+.ModalContent {
+  background-color: #54556f; /* Color de fondo del contenido */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative; /* Agrega posición relativa al contenedor del contenido */
+  animation: modal-fade-in 0.3s ease-in-out;
+}
+
+.ModalContent.closing {
+  animation: modal-fade-out 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(0);
+}
+
+@keyframes modal-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes modal-fade-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Estilos para el título del Modal */
+.ModalHeader {
+  background-color: #343541;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  margin: 20px;
+}
+
+.CloseButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+  position: absolute;
+  top: 10px; /* Ajusta la posición vertical según tus preferencias */
+  right: 10px; /* Ajusta la posición horizontal según tus preferencias */
+}
+.CloseButton:hover {
+  color: rgba(185, 28, 28);
+}

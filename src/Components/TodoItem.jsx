@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../Css/TodoItem.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { TodoContext } from "./TodoContext";
 
 function TodoItem(props) {
+  const { ok } = useContext(TodoContext);
+
   const handleCompleteToggle = () => {
     // Llama a la función onComplete pasando el ID del elemento actual
     props.onComplete(props.id);
+    ok("TODO Actualizado", "info");
   };
 
   return (

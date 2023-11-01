@@ -1,0 +1,60 @@
+.containerButton {
+  display: flex;
+  justify-content: space-between; /* Distribuye los botones horizontalmente */
+  margin-top: 20px; /* Añade espacio entre el formulario y los botones */
+}
+
+/* Estilo de los botones */
+.btn {
+  border: 2px solid black;
+  background-color: #54556f;
+  color: black;
+  padding: 8px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 48%; /* Ajusta el ancho de los botones para crear espacio entre ellos */
+}
+
+.success {
+  border-color: rgb(25, 195, 125);
+  color: rgb(25, 195, 125);
+}
+
+.success:hover {
+  background-color: rgb(25, 195, 125);
+  color: #ffff;
+}
+
+.danger {
+  border-color: rgba(185, 28, 28);
+  color: rgba(185, 28, 28);
+}
+
+.danger:hover {
+  background: rgba(185, 28, 28);
+  color: white;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Espacio entre elementos */
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px; /* Espacio entre el label y el textarea */
+  text-align: start;
+}
+
+textarea {
+  border: 2px solid black;
+  background-color: #f0f0f0; /* Cambia el fondo del textarea */
+  color: black;
+  padding: 8px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  resize: none; /* Evita que el usuario redimensione el textarea */
+  height: 50px; /* Altura personalizable */
+}

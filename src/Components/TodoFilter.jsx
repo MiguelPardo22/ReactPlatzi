@@ -24,6 +24,8 @@ function TodoFilter(props) {
     <div className={`input-container ${isFocused ? "focused" : ""}`}>
       <h4>Filtrado de Tareas:</h4>
       <input
+        id="searchTodo"
+        name="searchTodo"
         type="text"
         onFocus={handleFocus}
         onBlur={handleBlur}
