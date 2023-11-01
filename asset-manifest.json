@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ReactPlatzi/static/css/main.9391d445.css",
+    "main.js": "/ReactPlatzi/static/js/main.b0f788ed.js",
+    "static/media/fa-solid-900.ttf": "/ReactPlatzi/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
+    "static/media/fa-brands-400.ttf": "/ReactPlatzi/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
+    "static/media/fa-solid-900.woff2": "/ReactPlatzi/static/media/fa-solid-900.b6879d41b0852f01ed5b.woff2",
+    "static/media/fa-brands-400.woff2": "/ReactPlatzi/static/media/fa-brands-400.878f31251d960bd6266f.woff2",
+    "static/media/fa-regular-400.ttf": "/ReactPlatzi/static/media/fa-regular-400.50701fbb8177c2dde530.ttf",
+    "static/media/fa-regular-400.woff2": "/ReactPlatzi/static/media/fa-regular-400.b041b1fa4fe241b23445.woff2",
+    "static/media/fa-v4compatibility.ttf": "/ReactPlatzi/static/media/fa-v4compatibility.c6a0c95b0a95c4553700.ttf",
+    "static/media/fa-v4compatibility.woff2": "/ReactPlatzi/static/media/fa-v4compatibility.1bac2991f3dbfa237aec.woff2",
+    "index.html": "/ReactPlatzi/index.html",
+    "main.9391d445.css.map": "/ReactPlatzi/static/css/main.9391d445.css.map",
+    "main.b0f788ed.js.map": "/ReactPlatzi/static/js/main.b0f788ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9391d445.css",
+    "static/js/main.b0f788ed.js"
+  ]
+}
